@@ -5,26 +5,25 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { CiMenuBurger } from 'react-icons/ci';
+import { IoMenu } from 'react-icons/io5';
 
 export default function Header() {
   return (
-    <header className='container flex justify-between pt-5 sticky'>
+    <header className='container flex justify-between py-5 sticky top-0 bg-inherit z-50'>
       <Link href='/'>
         <h1>Tony</h1>
       </Link>
       <div className='md:hidden'>
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <CiMenuBurger />
+            <p className='sr-only'>menu</p>
+            <IoMenu />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>
-              <Link href='/'>Works</Link>
+              <Link href='#works'>Works</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link href='/'>About</Link>

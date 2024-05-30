@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Portfolio',
   description:
-    'Un site portfolio élégant et moderne présentant les projets, compétences et réalisations de Tony THERLIER.',
+    'Un site portfolio présentant les projets, compétences et réalisations de Tony THERLIER.',
 };
 
 export default function RootLayout({
