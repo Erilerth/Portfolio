@@ -7,16 +7,16 @@ export default function Footer() {
   return (
     <footer className='flex justify-end'>
       <ul className='flex gap-2 mr-5'>
-        <Button variant='ghost'>
+        <li>
           <Link href='https://github.com/Erilerth'>
-            <li>Github</li>
+            <Button variant='ghost'>Github</Button>
           </Link>
-        </Button>
-        <Button variant='ghost'>
+        </li>
+        <li>
           <Link href='mailto:tony.therlier@gmail.com'>
-            <li>Email</li>
+            <Button variant='ghost'>Email</Button>
           </Link>
-        </Button>
+        </li>
       </ul>
     </footer>
   );
