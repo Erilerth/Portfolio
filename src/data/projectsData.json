@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "ohMyFood",
+    "slug": "ohMyFood",
+    "image": "/assets/images/ohMyFood.png",
+    "alt": "site ohMyFood",
+    "desc-short": "bonjour",
+    "desc-long": "bonjour 2",
+    "Github": "https://github.com/Erilerth/Projet_4_ohmyfood",
+    "Live": "https://erilerth.github.io/Projet_4_ohmyfood/",
+    "language": "Sass"
+  },
+  {
+    "id": 2,
+    "name": "ohMyFood",
+    "slug": "ohMyFood",
+    "image": "/assets/images/ohMyFood.png",
+    "alt": "test",
+    "desc-short": "bonjour",
+    "desc-long": "bonjour 2",
+    "Github": "https://github.com/Erilerth/Projet_4_ohmyfood",
+    "Live": "https://erilerth.github.io/Projet_4_ohmyfood/",
+    "language": "Sass"
+  }
+]
