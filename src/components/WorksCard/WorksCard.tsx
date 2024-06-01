@@ -6,8 +6,6 @@ interface CardType {
   image: string;
   alt: string;
   name: string;
-  github: string;
-  live: string;
   slug: string;
   desc: string;
   tag: string;

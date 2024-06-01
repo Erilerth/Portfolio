@@ -93,8 +93,6 @@ export default function page() {
                   alt={rule.alt}
                   name={rule.name}
                   slug={rule.slug}
-                  github={rule.Github}
-                  live={rule.Live}
                   desc={rule['desc-short']}
                   tag={rule.language}
                 />

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='flex h-16 items-center justify-between px-4 md:px-6'>
+    <header className='flex h-16 items-center justify-between px-4 sticky top-0 bg-inherit md:px-6'>
       <Link href='/' className='text-lg font-bold' prefetch={false}>
         <h1>Tony</h1>
       </Link>

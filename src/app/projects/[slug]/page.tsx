@@ -1,38 +1,42 @@
 'use client';
 
-import { useParams } from 'next/navigation';
+import { redirect, useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import Project from '@/data/projectsData.json';
 
 export default function ProjectPage() {
-  const param = useParams();
-  console.log(param.slug);
+  const { slug } = useParams();
+  const currentProject = Project.find((data) => data.slug === slug);
+  if (currentProject === undefined) return redirect('/404');
+
   return (
-    <main className='h-[calc(100vh-64px-40px)] w-full max-w-6xl mx-auto py-12 md:py-16 lg:py-20 px-4 md:px-6'>
+    <main className='w-full max-w-6xl mx-auto py-12 md:py-16 lg:py-20 px-4 md:px-6'>
       <div className='grid md:grid-cols-2 gap-6 lg:gap-12'>
         <div className='rounded-lg overflow-hidden'>
           <Image
-            src='/placeholder.svg'
+            src={currentProject.image}
             alt='Project Screenshot'
             width={800}
             height={500}
             className='w-full h-full object-cover'
+            priority={true}
           />
         </div>
         <div className='space-y-6'>
           <div>
             <h1 className='text-3xl font-bold sm:text-4xl md:text-5xl'>
-              Project Name
+              {currentProject.name}
             </h1>
             <p className='text-gray-500 dark:text-gray-400 mt-2 text-lg'>
-              A brief description of the project and what it does.
+              {currentProject['desc-short']}
             </p>
           </div>
           <div className='space-y-4'>
             <div className='flex items-center gap-2'>
               <LinkIcon className='w-5 h-5 text-gray-500 dark:text-gray-400' />
               <Link
-                href='#'
+                href={currentProject.Live}
                 className='text-primary hover:underline'
                 prefetch={false}>
                 Live App
@@ -41,7 +45,7 @@ export default function ProjectPage() {
             <div className='flex items-center gap-2'>
               <GithubIcon className='w-5 h-5 text-gray-500 dark:text-gray-400' />
               <Link
-                href='#'
+                href={currentProject.Github}
                 className='text-primary hover:underline'
                 prefetch={false}>
                 Source Code
@@ -49,16 +53,7 @@ export default function ProjectPage() {
             </div>
           </div>
           <div className='prose dark:prose-invert'>
-            <p>
-              A more detailed description of the project, including the
-              technologies used, the features, and any other relevant
-              information.
-            </p>
-            <p>
-              You can also include any additional details or context about the
-              project, such as the motivation behind it, the challenges you
-              faced, or the lessons you learned.
-            </p>
+            <p>{currentProject['desc-long']}</p>
           </div>
         </div>
       </div>
