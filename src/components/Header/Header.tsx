@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const param = usePathname();
-  console.log(param);
   return (
     <header className='flex h-16 items-center justify-between px-4 sticky top-0 bg-inherit md:px-6 z-[999]'>
       <Link href='/' className='text-lg font-bold' prefetch={false}>
