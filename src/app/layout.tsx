@@ -9,7 +9,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Portfolio Tony THERLIER',
   description:
     'Un site portfolio présentant les projets, compétences et réalisations de Tony THERLIER.',
 };
