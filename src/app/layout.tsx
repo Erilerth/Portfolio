@@ -4,11 +4,12 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Portfolio Tony THERLIER',
   description:
     'Un site portfolio présentant les projets, compétences et réalisations de Tony THERLIER.',
 };
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <SpeedInsights />
       <body className={inter.className}>
         <ThemeProvider
           attribute='class'

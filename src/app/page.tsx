@@ -5,13 +5,14 @@ import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 import Projects from '@/data/projectsData.json';
 import WorksCard from '@/components/WorksCard/WorksCard';
-import { FaCheck } from 'react-icons/fa6';
 import About from '@/data/about.json';
 import AboutCheck from '@/components/AboutCheck/AboutCheck';
 
 export default function page() {
   const skills = About.skills.split(', ');
   const formations = About.Formations.split(', ');
+
+  Projects.sort((a, b) => b.id - a.id);
 
   return (
     <main className='container'>
@@ -40,18 +41,19 @@ export default function page() {
           <div className='mx-auto max-w-3xl space-y-6'>
             <article className='space-y-2'>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
-                About Me
+                A propos
               </h2>
               <p className='text-gray-500 md:text-xl dark:text-gray-400'>
-                Hi, I&apos;m Tony, an web. I have a web integrator. I have deep
-                understanding of modern JavaScript frameworks and libraries, and
-                I&apos;m always eager to learn and explore new tools and
-                techniques to enhance my skills.
+                Bonjour, je m&apos;appelle Tony. Je suis intégrateur web.
+                J&apos;ai une connaissance approfondie des frameworks et
+                bibliothèques JavaScript modernes et je suis toujours désireux
+                d&apos;apprendre et d&apos;explorer de nouveaux outils et
+                techniques pour améliorer mes compétences.
               </p>
             </article>
             <div className='grid gap-4 sm:grid-cols-2'>
               <article className='space-y-2'>
-                <h3 className='text-xl font-bold'>Key Skills</h3>
+                <h3 className='text-xl font-bold'>Compétences clé</h3>
                 <ul className='space-y-1 text-gray-500 dark:text-gray-400'>
                   {skills.map((rule, id) => {
                     return <AboutCheck key={id} name={rule} />;
@@ -79,8 +81,9 @@ export default function page() {
                 My Projects
               </h2>
               <p className='max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400'>
-                Here&apos;s a showcase of the projects I&apos;ve worked on.
-                Click on the cards to see more details about the projects.
+                Ici est une présentation des projets sur lesquelles j&apos;ai
+                travaillé. Cliqué sur les cartes pour plus d&apos;information
+                relative aux projets
               </p>
             </div>
           </article>
@@ -95,6 +98,7 @@ export default function page() {
                   slug={rule.slug}
                   desc={rule['desc-short']}
                   tag={rule.language}
+                  link={rule.Live}
                 />
               );
             })}
