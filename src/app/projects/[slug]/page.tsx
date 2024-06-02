@@ -10,6 +10,8 @@ export default function ProjectPage() {
   const currentProject = Project.find((data) => data.slug === slug);
   if (currentProject === undefined) return redirect('/404');
 
+  const descLong = currentProject['desc-long'].split('; ');
+
   return (
     <main className='w-full max-w-6xl mx-auto py-12 md:py-16 lg:py-20 px-4 md:px-6'>
       <div className='grid md:grid-cols-2 gap-6 lg:gap-12'>
@@ -20,7 +22,7 @@ export default function ProjectPage() {
             width={800}
             height={500}
             className='w-full h-full object-cover'
-            priority={true}
+            priority
           />
         </div>
         <div className='space-y-6'>
@@ -33,19 +35,23 @@ export default function ProjectPage() {
             </p>
           </div>
           <div className='space-y-4'>
-            <div className='flex items-center gap-2'>
-              <LinkIcon className='w-5 h-5 text-gray-500 dark:text-gray-400' />
-              <Link
-                href={currentProject.Live}
-                className='text-primary hover:underline'
-                prefetch={false}>
-                Live App
-              </Link>
-            </div>
+            {currentProject.Live && (
+              <div className='flex items-center gap-2'>
+                <LinkIcon className='w-5 h-5 text-gray-500 dark:text-gray-400' />
+                <Link
+                  href={currentProject.Live}
+                  target='_blank'
+                  className='text-primary hover:underline'
+                  prefetch={false}>
+                  Live App
+                </Link>
+              </div>
+            )}
             <div className='flex items-center gap-2'>
               <GithubIcon className='w-5 h-5 text-gray-500 dark:text-gray-400' />
               <Link
                 href={currentProject.Github}
+                target='_blank'
                 className='text-primary hover:underline'
                 prefetch={false}>
                 Source Code
@@ -53,7 +59,13 @@ export default function ProjectPage() {
             </div>
           </div>
           <div className='prose dark:prose-invert'>
-            <p>{currentProject['desc-long']}</p>
+            {descLong.map((rule, id) => {
+              return (
+                <p className='mb-5' key={id}>
+                  {rule}
+                </p>
+              );
+            })}
           </div>
         </div>
       </div>

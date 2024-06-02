@@ -9,6 +9,7 @@ interface CardType {
   slug: string;
   desc: string;
   tag: string;
+  link: string | undefined;
 }
 
 export default function WorksCard({
@@ -18,6 +19,7 @@ export default function WorksCard({
   slug,
   desc,
   tag,
+  link,
 }: CardType) {
   return (
     <div className='group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2'>
@@ -32,7 +34,7 @@ export default function WorksCard({
         alt={alt}
         width={600}
         height={400}
-        className='object-cover w-full h-64 group-hover:opacity-50 transition-opacity'
+        className='object-cover object-top w-full h-64 group-hover:opacity-50 transition-opacity'
       />
       <div className='absolute top-4 left-4 bg-gray-900 text-white px-2 py-1 rounded text-xs'>
         {tag}
@@ -42,13 +44,15 @@ export default function WorksCard({
         <p className='text-sm text-gray-500 dark:text-gray-400'>{desc}</p>
         <div className='flex items-center justify-between mt-4'>
           <div className='inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline underline-offset-2'>
-            <GlobeIcon className='w-4 h-4' />
-            Live
-          </div>
-          <div className='inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline underline-offset-2'>
             <CodeIcon className='w-4 h-4' />
             Source
           </div>
+          {link && (
+            <div className='inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline underline-offset-2'>
+              <GlobeIcon className='w-4 h-4' />
+              Live
+            </div>
+          )}
         </div>
       </div>
     </div>

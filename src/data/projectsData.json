@@ -5,22 +5,66 @@
     "slug": "ohMyFood",
     "image": "/assets/images/ohMyFood.png",
     "alt": "site ohMyFood",
-    "desc-short": "bonjour",
-    "desc-long": "bonjour 2",
+    "desc-short": "Amélioration d'un site mobile avec des animations CSS",
+    "desc-long": "J'ai travaillé sur l'intégration mobile-first de l'interface du site d'une start-up, en utilisant des maquettes mobiles et desktop fournies, ainsi qu'un prototype sur Figma. L'approche mobile-first a permis de garantir une expérience utilisateur fluide sur tous les appareils.; Pour structurer et maintenir les styles CSS, j'ai utilisé SASS, un préprocesseur CSS, facilitant l'écriture de styles organisés et réutilisables. J'ai également implémenté diverses animations CSS, rendant la navigation plus interactive et engageante, sans compromettre les performances.; Le versionnement du projet a été géré avec Git et GitHub, assurant une gestion efficace des modifications et une traçabilité complète de l'historique des changements. Cette expérience a renforcé mes compétences en conception responsive, utilisation de SASS, création d'animations CSS, et gestion de versioning.",
     "Github": "https://github.com/Erilerth/Projet_4_ohmyfood",
     "Live": "https://erilerth.github.io/Projet_4_ohmyfood/",
     "language": "Sass"
   },
   {
     "id": 2,
-    "name": "ohMyFood",
-    "slug": "ohMyFood",
-    "image": "/assets/images/ohMyFood.png",
-    "alt": "test",
-    "desc-short": "bonjour",
-    "desc-long": "bonjour 2",
-    "Github": "https://github.com/Erilerth/Projet_4_ohmyfood",
-    "Live": "https://erilerth.github.io/Projet_4_ohmyfood/",
-    "language": "Sass"
+    "name": "Sohpie Bluel",
+    "slug": "sophie-bluel-portfolio",
+    "image": "/assets/images/Sophie-Bluel.png",
+    "alt": "Image du site portfolio de sophie bluel",
+    "desc-short": "Création d'une page web dynamique avec JavaScript",
+    "desc-long": "J'ai développé une page web dynamique pour le site d'une architecte d'intérieur, en utilisant JavaScript pour gérer les événements utilisateurs et manipuler le DOM. À partir du HTML fourni, j'ai créé une page de présentation des travaux de l'architecte, permettant une interaction fluide et réactive avec les utilisateurs.; En outre, j'ai conçu une page de connexion pour l'administrateur du site et une modale pour uploader de nouveaux médias. Ces composants ont été développés from scratch, ce qui m'a permis de mettre en pratique mes compétences en JavaScript de manière approfondie et de créer des interfaces utilisateur robustes et intuitives.; Pour la première fois, j'ai pu tester des fonctionnalités en communiquant avec une API grâce à l'accès au code back-end. Cela m'a permis de comprendre et de mettre en œuvre des appels API, une compétence essentielle pour le développement d'applications web modernes.",
+    "Github": "https://github.com/Erilerth/Portfolio-architecte-sophie-bluel",
+    "language": "javascript"
+  },
+  {
+    "id": 3,
+    "name": "Kasa",
+    "slug": "kasa",
+    "image": "/assets/images/Kasa.png",
+    "alt": "Image du site Kasa",
+    "desc-short": "Création d'un site immobilier avec React",
+    "desc-long": "Dans le cadre de ce projet, j'ai implémenté le front-end d'une application en utilisant React et React Router, afin de créer une expérience utilisateur moderne et réactive. En me basant sur les maquettes fournies, j'ai développé divers composants React pour présenter les données de manière dynamique et interactive.; J'ai configuré la navigation entre les différentes pages de l'application à l'aide de React Router, ce qui m'a permis de gérer efficacement le routage et de créer une interface utilisateur fluide. L'utilisation de React Router a été essentielle pour assurer une navigation intuitive et sans rechargement des pages, améliorant ainsi l'expérience utilisateur.; Le projet s'est concentré exclusivement sur le développement front-end, utilisant des données simulées extraites d'un fichier JSON. Cela m'a permis de me familiariser avec la manipulation des données et la gestion des états dans une application React, consolidant ainsi mes compétences en développement front-end moderne.",
+    "Github": "https://github.com/Erilerth/Kasa-OC",
+    "language": "React.js"
+  },
+  {
+    "id": 4,
+    "name": "Nina Carducci",
+    "slug": "nina-carducci",
+    "image": "/assets/images/Nina-Carducci.png",
+    "alt": "Image du site de Nina Carducci",
+    "desc-short": "Optimisation du SEO d'un site de photographe",
+    "desc-long": "Dans ce projet, j'ai optimisé le référencement d'un site en améliorant sa performance et son accessibilité. J'ai commencé par identifier les problèmes de chargement et de référencement en utilisant des outils tels que Lighthouse et Wave pour effectuer des audits détaillés.; Ensuite, j'ai proposé et appliqué des recommandations pour améliorer la vitesse de chargement, la structure du code, et le référencement du site. Les modifications apportées comprenaient l'optimisation des images, la réduction du code JavaScript et CSS inutilisé, et l'amélioration des balises HTML pour un meilleur SEO.; Enfin, j'ai créé un rapport illustrant les résultats avant et après les modifications, incluant des captures d'écran des audits et des explications détaillées sur les changements apportés. Ce rapport a montré une amélioration significative des performances et de l'accessibilité du site, contribuant à un meilleur classement sur les moteurs de recherche.",
+    "Github": "https://github.com/Erilerth/ninacarducci.github.io",
+    "Live": "https://erilerth.github.io/ninacarducci.github.io/",
+    "language": "SEO"
+  },
+  {
+    "id": 5,
+    "name": "724events",
+    "slug": "724events",
+    "image": "/assets/images/724events.png",
+    "alt": "Image du site 724events",
+    "desc-short": "Débogage d'un site d'une agence d'évènementiel",
+    "desc-long": "Dans ce projet, j'ai débogué et finalisé le développement d'un site one-page. Mon premier objectif a été d'examiner le code existant en utilisant Chrome DevTools pour identifier et comprendre les problèmes et bugs signalés. Cette étape initiale m'a permis de localiser les dysfonctionnements et de planifier les corrections nécessaires.; Après avoir identifié les problèmes, j'ai utilisé mes compétences en JavaScript et les outils spécifiques à React, comme React Developer Tools, pour résoudre les bugs et améliorer la fonctionnalité du site. Cela a inclus la correction des erreurs de rendu, l'optimisation des performances et l'amélioration de l'interactivité utilisateur.; En parallèle, j'ai complété le cahier de recette, détaillant tous les scénarios de test nécessaires pour vérifier le bon fonctionnement du site. Ce document comprenait des tests unitaires et fonctionnels, assurant une couverture complète des fonctionnalités. Pour la gestion du projet, j'ai utilisé Yarn comme gestionnaire de packages et Node.js pour exécuter du code JavaScript côté serveur, facilitant ainsi la gestion des dépendances et l'exécution des tests localement.",
+    "Github": "https://github.com/Erilerth/Debuggez-une-application-React.JS",
+    "language": "Debug"
+  },
+  {
+    "id": 6,
+    "name": "ArgentBank",
+    "slug": "argent-bank",
+    "image": "/assets/images/ArgentBank.png",
+    "alt": "Image du site ArgentBank",
+    "desc-short": "Implémentation du front-end avec Redux",
+    "desc-long": "Dans ce projet, j'ai développé le front-end d'une application bancaire en utilisant React et Redux, créant une expérience utilisateur dynamique et réactive. Ma mission principale a été d'intégrer le front-end avec le back-end via des appels API REST, assurant une communication fluide entre le client et le serveur.; J'ai utilisé React pour développer une interface utilisateur complète et responsive, avec un tableau de bord bancaire permettant aux utilisateurs de visualiser et de gérer leurs transactions. Grâce à Redux, j'ai géré efficacement les données de l'application, maintenant un état global cohérent à travers toutes les fonctionnalités du tableau de bord.; Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisé Swagger. Cet outil m'a aidé à décrire les différentes routes et actions nécessaires pour l'API, facilitant ainsi l'intégration et la gestion des appels API. Les résultats ont montré une interface utilisateur fluide et une gestion efficace des données, améliorant significativement l'expérience utilisateur de l'application bancaire.;",
+    "Github": "https://github.com/Erilerth/ArgentBank",
+    "language": "Redux"
   }
 ]
