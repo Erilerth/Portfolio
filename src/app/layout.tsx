@@ -9,7 +9,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio Tony THERLIER',
+  title: 'Portfolio Tony therlier',
   description:
     'Un site portfolio présentant les projets, compétences et réalisations de Tony THERLIER.',
 };
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='fr' suppressHydrationWarning>
       <SpeedInsights />
       <body className={inter.className}>
         <ThemeProvider

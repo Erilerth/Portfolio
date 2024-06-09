@@ -15,13 +15,13 @@ export default function Header() {
           href={param === '/' ? '#about' : '/#about'}
           className='text-sm font-medium hover:underline underline-offset-4'
           prefetch={false}>
-          About
+          A propos
         </Link>
         <Link
           href={param === '/' ? '#works' : '/#works'}
           className='text-sm font-medium hover:underline underline-offset-4'
           prefetch={false}>
-          Works
+          Projets
         </Link>
       </nav>
     </header>
