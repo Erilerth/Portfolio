@@ -81,7 +81,7 @@ export default function page() {
                 Mes Projets
               </h2>
               <p className='max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400'>
-                Ici est une présentation des projets sur lesquelles j&apos;ai
+                Ici est une présentation des projets sur lesquels j&apos;ai
                 travaillé. Cliqué sur les cartes pour plus d&apos;information
                 relative aux projets
               </p>
